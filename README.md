@@ -1,4 +1,6 @@
-# AI Test Case Generator using RAG, Langflow & Batch Processing
+# AI Test Case Generator using RAG, Langflow & Batch Processing with UI
+
+**Developed by Naveen Ravichandran**
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
