@@ -1,0 +1,1585 @@
+--- Batch 1: POSITIVE/HAPPY PATH SCENARIOS AND BASIC FUNCTIONALITY (TC-001 to TC-050) ---
+Here are the additional 43 test cases to complete the batch of 50:
+
+Test Case 001:
+ID: TC001
+Title: Valid Login with Registered User (Different Email)
+Description: Test logging in with a different valid email and password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a different valid email and password
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 002:
+ID: TC002
+Title: Valid Login with Registered User (Different Password)
+Description: Test logging in with a valid email and a different password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email and a different password
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 003:
+ID: TC003
+Title: Valid Login with Registered User (Different Email and Password)
+Description: Test logging in with a different valid email and a different password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a different valid email and a different password
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 004:
+ID: TC004
+Title: Login with Registered User (Case Insensitive Email)
+Description: Test logging in with a registered user using a case insensitive email
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email in a different case and a valid password
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 005:
+ID: TC005
+Title: Login with Registered User (Case Insensitive Password)
+Description: Test logging in with a registered user using a case insensitive password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email and a password in a different case
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 006:
+ID: TC006
+Title: Login with Registered User (Leading and Trailing Spaces)
+Description: Test logging in with a registered user using leading and trailing spaces in the email and password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email with leading and trailing spaces and a password with leading and trailing spaces
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 007:
+ID: TC007
+Title: Login with Registered User (Multiple Spaces)
+Description: Test logging in with a registered user using multiple spaces in the email and password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email with multiple spaces and a password with multiple spaces
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 008:
+ID: TC008
+Title: Login with Registered User (Special Characters)
+Description: Test logging in with a registered user using special characters in the email and password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email with special characters and a password with special characters
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 009:
+ID: TC009
+Title: Login with Registered User (Long Email)
+Description: Test logging in with a registered user using a long email
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email that is longer than the maximum allowed length and a valid password
+3. Click the login button
+Expected Result: Error message is displayed
+Priority: High
+Test Type: Negative
+
+Test Case 010:
+ID: TC010
+Title: Login with Registered User (Long Password)
+Description: Test logging in with a registered user using a long password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email and a password that is longer than the maximum allowed length
+3. Click the login button
+Expected Result: Error message is displayed
+Priority: High
+Test Type: Negative
+
+Test Case 011:
+ID: TC011
+Title: Login with Registered User (Short Email)
+Description: Test logging in with a registered user using a short email
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email that is shorter than the minimum allowed length and a valid password
+3. Click the login button
+Expected Result: Error message is displayed
+Priority: High
+Test Type: Negative
+
+Test Case 012:
+ID: TC012
+Title: Login with Registered User (Short Password)
+Description: Test logging in with a registered user using a short password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email and a password that is shorter than the minimum allowed length
+3. Click the login button
+Expected Result: Error message is displayed
+Priority: High
+Test Type: Negative
+
+Test Case 013:
+ID: TC013
+Title: Login with Registered User (Invalid Email Format)
+Description: Test logging in with a registered user using an invalid email format
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter an invalid email format and a valid password
+3. Click the login button
+Expected Result: Error message is displayed
+Priority: High
+Test Type: Negative
+
+Test Case 014:
+ID: TC014
+Title: Login with Registered User (Invalid Password Format)
+Description: Test logging in with a registered user using an invalid password format
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email and an invalid password format
+3. Click the login button
+Expected Result: Error message is displayed
+Priority: High
+Test Type: Negative
+
+Test Case 015:
+ID: TC015
+Title: Login with Registered User (Empty Email and Password)
+Description: Test logging in with a registered user using empty email and password
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter an empty email and an empty password
+3. Click the login button
+Expected Result: Error message is displayed
+Priority: High
+Test Type: Negative
+
+Test Case 016:
+ID: TC016
+Title: Login with Registered User (Email and Password with Leading and Trailing Spaces)
+Description: Test logging in with a registered user using email and password with leading and trailing spaces
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email with leading and trailing spaces and a password with leading and trailing spaces
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 017:
+ID: TC017
+Title: Login with Registered User (Email and Password with Multiple Spaces)
+Description: Test logging in with a registered user using email and password with multiple spaces
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email with multiple spaces and a password with multiple spaces
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 018:
+ID: TC018
+Title: Login with Registered User (Email and Password with Special Characters)
+Description: Test logging in with a registered user using email and password with special characters
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email with special characters and a password with special characters
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 019:
+ID: TC019
+Title: Login with Registered User (Email and Password with Long Characters)
+Description: Test logging in with a registered user using email and password with long characters
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email with long characters and a password with long characters
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 020:
+ID: TC020
+Title: Login with Registered User (Email and Password with Short Characters)
+Description: Test logging in with a registered user using email and password with short characters
+Preconditions: User is registered with a valid email and password
+Steps:
+1. Navigate to the login page
+2. Enter a valid email with short characters and a password with short characters
+3. Click the login button
+Expected Result: User is redirected to the dashboard
+Priority: High
+Test Type: Positive
+
+Test Case 021
+
+--- Batch 2: NEGATIVE SCENARIOS AND INVALID INPUT HANDLING (TC-051 to TC-100) ---
+Here are the 50 test cases for the given requirement:
+
+**Test Case 051: Invalid Email Format with Special Characters**
+TC051: Negative - Invalid Email Format with Special Characters
+Description: User logs in with invalid email format containing special characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with special characters in the email field. 2. Enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 052: Empty Email Field with Leading and Trailing Spaces**
+TC052: Negative - Empty Email Field with Leading and Trailing Spaces
+Description: User logs in with empty email field containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter empty email with leading and trailing spaces in the email field. 2. Enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 053: Invalid Password Format with Special Characters**
+TC053: Negative - Invalid Password Format with Special Characters
+Description: User logs in with invalid password format containing special characters. Preconditions: User is registered. Steps:
+1. Enter valid email. 2. Enter invalid password with special characters in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 054: Login with Registered User (Email and Password with Leading and Trailing Spaces)**
+TC054: Negative - Login with Registered User (Email and Password with Leading and Trailing Spaces)
+Description: User logs in with registered user credentials containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter email with leading and trailing spaces in the email field. 2. Enter password with leading and trailing spaces in the password field. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Negative
+
+**Test Case 055: Invalid Email Format with Long Characters**
+TC055: Negative - Invalid Email Format with Long Characters
+Description: User logs in with invalid email format containing long characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with long characters in the email field. 2. Enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 056: Empty Password Field with Multiple Spaces**
+TC056: Negative - Empty Password Field with Multiple Spaces
+Description: User logs in with empty password field containing multiple spaces. Preconditions: User is registered. Steps:
+1. Enter valid email. 2. Enter empty password with multiple spaces in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 057: Invalid Password Format with Long Characters**
+TC057: Negative - Invalid Password Format with Long Characters
+Description: User logs in with invalid password format containing long characters. Preconditions: User is registered. Steps:
+1. Enter valid email. 2. Enter invalid password with long characters in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 058: Login with Registered User (Email and Password with Short Characters)**
+TC058: Negative - Login with Registered User (Email and Password with Short Characters)
+Description: User logs in with registered user credentials containing short characters. Preconditions: User is registered. Steps:
+1. Enter email with short characters in the email field. 2. Enter password with short characters in the password field. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Negative
+
+**Test Case 059: Invalid Email Format with Short Characters**
+TC059: Negative - Invalid Email Format with Short Characters
+Description: User logs in with invalid email format containing short characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with short characters in the email field. 2. Enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 060: Empty Email Field with Multiple Spaces**
+TC060: Negative - Empty Email Field with Multiple Spaces
+Description: User logs in with empty email field containing multiple spaces. Preconditions: User is registered. Steps:
+1. Enter empty email with multiple spaces in the email field. 2. Enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 061: Invalid Password Format with Short Characters**
+TC061: Negative - Invalid Password Format with Short Characters
+Description: User logs in with invalid password format containing short characters. Preconditions: User is registered. Steps:
+1. Enter valid email. 2. Enter invalid password with short characters in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 062: Login with Registered User (Email and Password with Special Characters)**
+TC062: Negative - Login with Registered User (Email and Password with Special Characters)
+Description: User logs in with registered user credentials containing special characters. Preconditions: User is registered. Steps:
+1. Enter email with special characters in the email field. 2. Enter password with special characters in the password field. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Negative
+
+**Test Case 063: Invalid Email Format with Multiple Spaces**
+TC063: Negative - Invalid Email Format with Multiple Spaces
+Description: User logs in with invalid email format containing multiple spaces. Preconditions: User is not registered. Steps:
+1. Enter invalid email with multiple spaces in the email field. 2. Enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 064: Empty Password Field with Leading and Trailing Spaces**
+TC064: Negative - Empty Password Field with Leading and Trailing Spaces
+Description: User logs in with empty password field containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter valid email. 2. Enter empty password with leading and trailing spaces in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 065: Invalid Password Format with Multiple Spaces**
+TC065: Negative - Invalid Password Format with Multiple Spaces
+Description: User logs in with invalid password format containing multiple spaces. Preconditions: User is registered. Steps:
+1. Enter valid email. 2. Enter invalid password with multiple spaces in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 066: Login with Registered User (Email and Password with Long Characters)**
+TC066: Negative - Login with Registered User (Email and Password with Long Characters)
+Description: User logs in with registered user credentials containing long characters. Preconditions: User is registered. Steps:
+1. Enter email with long characters in the email field. 2. Enter password with long characters in the password field. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Negative
+
+**Test Case 067: Invalid Email Format with Empty Field**
+TC067: Negative - Invalid Email Format with Empty Field
+Description: User logs in with invalid email format containing empty field. Preconditions: User is not registered. Steps:
+1. Enter empty email in the email field. 2. Enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 068: Empty Email Field with Special Characters**
+TC068: Negative - Empty Email Field with Special Characters
+Description: User logs in with empty email field containing special characters. Preconditions: User is registered. Steps:
+1. Enter empty email with special characters in the email field. 2. Enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 069: Invalid Password Format with Empty Field**
+TC069: Negative - Invalid Password Format with Empty Field
+Description: User logs in with invalid password format containing empty field. Preconditions: User is registered. Steps:
+1. Enter valid email. 2. Enter empty password in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 070: Login with Registered User (Email and Password with Leading and Trailing Spaces)**
+TC070: Negative - Login with Registered User (Email and Password with Leading and Trailing Spaces)
+Description: User logs in with registered user credentials containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter email with leading and trailing spaces in the email field. 2. Enter password with leading and trailing spaces in the password field. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Negative
+
+**Test Case 071: Invalid Email Format with Leading and Trailing Spaces**
+TC071: Negative - Invalid Email Format with Leading and Trailing Spaces
+Description: User logs in with invalid email format containing leading and trailing spaces. Preconditions: User is not registered. Steps:
+1. Enter invalid email with leading and trailing spaces in the email field. 2. Enter valid password. 3. Click the login
+
+--- Batch 3: BOUNDARY VALUE ANALYSIS AND EDGE CASES (TC-101 to TC-150) ---
+Here are the 50 test cases for Batch 3, numbered from TC131 to TC123, focusing on boundary value analysis and edge cases:
+
+**TC131: Login with Email and Password with Leading and Trailing Spaces**
+ID: TC131
+Title: Login with Email and Password with Leading and Trailing Spaces
+Description: User logs in with email and password having leading and trailing spaces.
+Preconditions: User is registered.
+Steps:
+1. Enter email with leading and trailing spaces in the email field.
+2. Enter password with leading and trailing spaces in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC139: Login with Email and Password with Multiple Spaces**
+ID: TC123
+Title: Login with Email and Password with Multiple Spaces
+Description: User logs in with email and password having multiple spaces.
+Preconditions: User is registered.
+Steps:
+1. Enter email with multiple spaces in the email field.
+2. Enter password with multiple spaces in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC127: Login with Email and Password with Special Characters**
+ID: TC131
+Title: Login with Email and Password with Special Characters
+Description: User logs in with email and password containing special characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with special characters in the email field.
+2. Enter password with special characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC135: Login with Email and Password with Long Characters**
+ID: TC139
+Title: Login with Email and Password with Long Characters
+Description: User logs in with email and password having long characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with long characters in the email field.
+2. Enter password with long characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC121: Login with Email and Password with Short Characters**
+ID: TC123
+Title: Login with Email and Password with Short Characters
+Description: User logs in with email and password having short characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with short characters in the email field.
+2. Enter password with short characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC125: Login with Email and Password with Non-ASCII Characters**
+ID: TC127
+Title: Login with Email and Password with Non-ASCII Characters
+Description: User logs in with email and password containing non-ASCII characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with non-ASCII characters in the email field.
+2. Enter password with non-ASCII characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC129: Login with Email and Password with Null Characters**
+ID: TC131
+Title: Login with Email and Password with Null Characters
+Description: User logs in with email and password containing null characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with null characters in the email field.
+2. Enter password with null characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC133: Login with Email and Password with Unicode Characters**
+ID: TC135
+Title: Login with Email and Password with Unicode Characters
+Description: User logs in with email and password containing Unicode characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Unicode characters in the email field.
+2. Enter password with Unicode characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC137: Login with Email and Password with Cyrillic Characters**
+ID: TC139
+Title: Login with Email and Password with Cyrillic Characters
+Description: User logs in with email and password containing Cyrillic characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Cyrillic characters in the email field.
+2. Enter password with Cyrillic characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC141: Login with Email and Password with Greek Characters**
+ID: TC121
+Title: Login with Email and Password with Greek Characters
+Description: User logs in with email and password containing Greek characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Greek characters in the email field.
+2. Enter password with Greek characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC122: Login with Email and Password with Turkish Characters**
+ID: TC123
+Title: Login with Email and Password with Turkish Characters
+Description: User logs in with email and password containing Turkish characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Turkish characters in the email field.
+2. Enter password with Turkish characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC124: Login with Email and Password with Chinese Characters**
+ID: TC125
+Title: Login with Email and Password with Chinese Characters
+Description: User logs in with email and password containing Chinese characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Chinese characters in the email field.
+2. Enter password with Chinese characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC126: Login with Email and Password with Japanese Characters**
+ID: TC127
+Title: Login with Email and Password with Japanese Characters
+Description: User logs in with email and password containing Japanese characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Japanese characters in the email field.
+2. Enter password with Japanese characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC128: Login with Email and Password with Korean Characters**
+ID: TC129
+Title: Login with Email and Password with Korean Characters
+Description: User logs in with email and password containing Korean characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Korean characters in the email field.
+2. Enter password with Korean characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC130: Login with Email and Password with Arabic Characters**
+ID: TC131
+Title: Login with Email and Password with Arabic Characters
+Description: User logs in with email and password containing Arabic characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Arabic characters in the email field.
+2. Enter password with Arabic characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC132: Login with Email and Password with Hebrew Characters**
+ID: TC133
+Title: Login with Email and Password with Hebrew Characters
+Description: User logs in with email and password containing Hebrew characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Hebrew characters in the email field.
+2. Enter password with Hebrew characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC134: Login with Email and Password with Russian Characters**
+ID: TC135
+Title: Login with Email and Password with Russian Characters
+Description: User logs in with email and password containing Russian characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Russian characters in the email field.
+2. Enter password with Russian characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC136: Login with Email and Password with Spanish Characters**
+ID: TC137
+Title: Login with Email and Password with Spanish Characters
+Description: User logs in with email and password containing Spanish characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with Spanish characters in the email field.
+2. Enter password with Spanish characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC138: Login with Email and Password with French Characters**
+ID: TC139
+Title: Login with Email and Password with French Characters
+Description: User logs in with email and password containing French characters.
+Preconditions: User is registered.
+Steps:
+1. Enter email with French characters in the email field.
+2. Enter password with French characters in the password field.
+3. Click the login button.
+Expected Result: Error message is displayed.
+Priority: Medium
+Test Type: Boundary Value Analysis
+
+**TC140: Login with Email and Password with German Characters**
+ID: TC141
+Title: Login with Email and Password with German Characters
+Description: User logs in with email and password containing German characters.
+Preconditions: User is registered.
+Steps:
+
+
+--- Batch 4: SECURITY TESTING (SQL INJECTION, XSS, AUTHENTICATION BYPASS, AUTHORIZATION) (TC-151 to TC-200) ---
+Here are the 50 test cases for Batch 4:
+
+**Test Case 151: SQL Injection Attack**
+TC151: Security - SQL Injection Attack
+Description: User attempts to login with SQL injection attack. Preconditions: User is not registered. Steps:
+1. Enter malicious SQL code in the email field. 2. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Security
+
+**Test Case 152: Cross-Site Scripting (XSS) Attack**
+TC152: Security - Cross-Site Scripting (XSS) Attack
+Description: User attempts to login with XSS attack. Preconditions: User is not registered. Steps:
+1. Enter malicious JavaScript code in the email field. 2. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Security
+
+**Test Case 153: Authentication Bypass**
+TC153: Security - Authentication Bypass
+Description: User attempts to bypass authentication. Preconditions: User is not registered. Steps:
+1. Enter valid email and password in the login form. 2. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Security
+
+**Test Case 154: Authorization Bypass**
+TC154: Security - Authorization Bypass
+Description: User attempts to bypass authorization. Preconditions: User is registered. Steps:
+1. Enter valid email and password in the login form. 2. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Security
+
+**Test Case 155: Session Hijacking**
+TC155: Security - Session Hijacking
+Description: User attempts to hijack session. Preconditions: User is logged in. Steps:
+1. Enter valid email and password in the login form. 2. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Security
+
+**Test Case 156: Session Fixation**
+TC156: Security - Session Fixation
+Description: User attempts to fix session. Preconditions: User is logged in. Steps:
+1. Enter valid email and password in the login form. 2. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Security
+
+**Test Case 157: Session Management**
+TC157: Security - Session Management
+Description: User attempts to manage session. Preconditions: User is logged in. Steps:
+1. Enter valid email and password in the login form. 2. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Security
+
+**Test Case 158: Logout Functionality**
+TC158: Functional - Logout Functionality
+Description: User logs out of the application. Preconditions: User is logged in. Steps:
+1. Click the logout button. 2. Expected Result: User is logged out. Priority: Medium
+Test Type: Functional
+
+**Test Case 159: Login with Registered User (Different Browser)**
+TC159: Positive - Login with Registered User (Different Browser)
+Description: User logs in with registered user using different browser. Preconditions: User is registered. Steps:
+1. Open application in different browser. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 160: Login with Registered User (Different Device)**
+TC160: Positive - Login with Registered User (Different Device)
+Description: User logs in with registered user using different device. Preconditions: User is registered. Steps:
+1. Open application on different device. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 161: Login with Registered User (Different Network)**
+TC161: Positive - Login with Registered User (Different Network)
+Description: User logs in with registered user using different network. Preconditions: User is registered. Steps:
+1. Open application on different network. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 162: Login with Registered User (Different Time Zone)**
+TC162: Positive - Login with Registered User (Different Time Zone)
+Description: User logs in with registered user using different time zone. Preconditions: User is registered. Steps:
+1. Open application in different time zone. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 163: Login with Registered User (Different Language)**
+TC163: Positive - Login with Registered User (Different Language)
+Description: User logs in with registered user using different language. Preconditions: User is registered. Steps:
+1. Open application in different language. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 164: Login with Registered User (Different Browser Version)**
+TC164: Positive - Login with Registered User (Different Browser Version)
+Description: User logs in with registered user using different browser version. Preconditions: User is registered. Steps:
+1. Open application in different browser version. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 165: Login with Registered User (Different Device Orientation)**
+TC165: Positive - Login with Registered User (Different Device Orientation)
+Description: User logs in with registered user using different device orientation. Preconditions: User is registered. Steps:
+1. Open application in different device orientation. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 166: Login with Registered User (Different Screen Resolution)**
+TC166: Positive - Login with Registered User (Different Screen Resolution)
+Description: User logs in with registered user using different screen resolution. Preconditions: User is registered. Steps:
+1. Open application in different screen resolution. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 167: Login with Registered User (Different Browser Extension)**
+TC167: Positive - Login with Registered User (Different Browser Extension)
+Description: User logs in with registered user using different browser extension. Preconditions: User is registered. Steps:
+1. Open application with different browser extension. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 168: Login with Registered User (Different Browser Plugin)**
+TC168: Positive - Login with Registered User (Different Browser Plugin)
+Description: User logs in with registered user using different browser plugin. Preconditions: User is registered. Steps:
+1. Open application with different browser plugin. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 169: Login with Registered User (Different Browser Theme)**
+TC169: Positive - Login with Registered User (Different Browser Theme)
+Description: User logs in with registered user using different browser theme. Preconditions: User is registered. Steps:
+1. Open application with different browser theme. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 170: Login with Registered User (Different Browser Font Size)**
+TC170: Positive - Login with Registered User (Different Browser Font Size)
+Description: User logs in with registered user using different browser font size. Preconditions: User is registered. Steps:
+1. Open application with different browser font size. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 171: Login with Registered User (Different Browser Zoom Level)**
+TC171: Positive - Login with Registered User (Different Browser Zoom Level)
+Description: User logs in with registered user using different browser zoom level. Preconditions: User is registered. Steps:
+1. Open application with different browser zoom level. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 172: Login with Registered User (Different Browser Language)**
+TC172: Positive - Login with Registered User (Different Browser Language)
+Description: User logs in with registered user using different browser language. Preconditions: User is registered. Steps:
+1. Open application with different browser language. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Positive
+
+**Test Case 173: Login with Registered User (Different Browser Time Zone)**
+TC173: Positive - Login with Registered User (Different Browser Time Zone)
+Description: User logs in with registered user using different browser time
+
+--- Batch 5: PERFORMANCE AND LOAD TESTING SCENARIOS (TC-201 to TC-250) ---
+Here are the 50 test cases for batch 5, numbered from TC225 to TC226, focusing on performance and load testing scenarios:
+
+**Test Case 201: High Concurrent Login Requests**
+TC225: Performance - High Concurrent Login Requests
+Description: Multiple users attempt to log in concurrently. Preconditions: Multiple users are registered. Steps:
+1. Simulate multiple users logging in concurrently. 2. Measure the response time and throughput. Expected Result: The application handles high concurrent login requests efficiently. Priority: High
+Test Type: Performance
+
+**Test Case 202: Low Network Bandwidth**
+TC226: Performance - Low Network Bandwidth
+Description: User logs in with low network bandwidth. Preconditions: User is registered. Steps:
+1. Simulate low network bandwidth. 2. Attempt to log in. Expected Result: The application handles low network bandwidth efficiently. Priority: Medium
+Test Type: Performance
+
+**Test Case 203: High Network Latency**
+TC225: Performance - High Network Latency
+Description: User logs in with high network latency. Preconditions: User is registered. Steps:
+1. Simulate high network latency. 2. Attempt to log in. Expected Result: The application handles high network latency efficiently. Priority: Medium
+Test Type: Performance
+
+**Test Case 204: Multiple Browser Types**
+TC226: Performance - Multiple Browser Types
+Description: User logs in with different browser types. Preconditions: User is registered. Steps:
+1. Attempt to log in with different browser types. 2. Measure the response time and throughput. Expected Result: The application handles different browser types efficiently. Priority: Medium
+Test Type: Performance
+
+**Test Case 205: High Traffic Volume**
+TC225: Performance - High Traffic Volume
+Description: Multiple users attempt to log in with high traffic volume. Preconditions: Multiple users are registered. Steps:
+1. Simulate high traffic volume. 2. Measure the response time and throughput. Expected Result: The application handles high traffic volume efficiently. Priority: High
+Test Type: Performance
+
+**Test Case 206: Low System Resources**
+TC226: Performance - Low System Resources
+Description: User logs in with low system resources. Preconditions: User is registered. Steps:
+1. Simulate low system resources. 2. Attempt to log in. Expected Result: The application handles low system resources efficiently. Priority: Medium
+Test Type: Performance
+
+**Test Case 207: High System Load**
+TC225: Performance - High System Load
+Description: User logs in with high system load. Preconditions: User is registered. Steps:
+1. Simulate high system load. 2. Attempt to log in. Expected Result: The application handles high system load efficiently. Priority: Medium
+Test Type: Performance
+
+**Test Case 208: Multiple Login Attempts**
+TC226: Security - Multiple Login Attempts
+Description: User attempts to log in multiple times with incorrect credentials. Preconditions: User is not registered. Steps:
+1. Attempt to log in multiple times with incorrect credentials. 2. Measure the response time and throughput. Expected Result: The application handles multiple login attempts efficiently. Priority: High
+Test Type: Security
+
+**Test Case 209: Session Expiration**
+TC225: Security - Session Expiration
+Description: User's session expires after a certain period of inactivity. Preconditions: User is logged in. Steps:
+1. Leave the application idle for a certain period. 2. Attempt to log in again. Expected Result: The application handles session expiration efficiently. Priority: High
+Test Type: Security
+
+**Test Case 210: Cross-Site Request Forgery (CSRF)**
+TC226: Security - Cross-Site Request Forgery (CSRF)
+Description: User attempts to log in with a CSRF attack. Preconditions: User is not registered. Steps:
+1. Attempt to log in with a CSRF attack. 2. Measure the response time and throughput. Expected Result: The application handles CSRF attacks efficiently. Priority: High
+Test Type: Security
+
+**Test Case 211: SQL Injection Attack**
+TC225: Security - SQL Injection Attack
+Description: User attempts to log in with a SQL injection attack. Preconditions: User is not registered. Steps:
+1. Attempt to log in with a SQL injection attack. 2. Measure the response time and throughput. Expected Result: The application handles SQL injection attacks efficiently. Priority: High
+Test Type: Security
+
+**Test Case 212: Cross-Site Scripting (XSS) Attack**
+TC226: Security - Cross-Site Scripting (XSS) Attack
+Description: User attempts to log in with an XSS attack. Preconditions: User is not registered. Steps:
+1. Attempt to log in with an XSS attack. 2. Measure the response time and throughput. Expected Result: The application handles XSS attacks efficiently. Priority: High
+Test Type: Security
+
+**Test Case 213: Brute Force Attack with IP Blocking**
+TC225: Security - Brute Force Attack with IP Blocking
+Description: User attempts to log in with a brute force attack and IP blocking. Preconditions: User is not registered. Steps:
+1. Attempt to log in with a brute force attack and IP blocking. 2. Measure the response time and throughput. Expected Result: The application handles brute force attacks with IP blocking efficiently. Priority: High
+Test Type: Security
+
+**Test Case 214: Session Hijacking**
+TC226: Security - Session Hijacking
+Description: User attempts to hijack another user's session. Preconditions: User is logged in. Steps:
+1. Attempt to hijack another user's session. 2. Measure the response time and throughput. Expected Result: The application handles session hijacking efficiently. Priority: High
+Test Type: Security
+
+**Test Case 215: Session Fixation**
+TC225: Security - Session Fixation
+Description: User attempts to fixate another user's session. Preconditions: User is logged in. Steps:
+1. Attempt to fixate another user's session. 2. Measure the response time and throughput. Expected Result: The application handles session fixation efficiently. Priority: High
+Test Type: Security
+
+**Test Case 216: Session Prediction**
+TC226: Security - Session Prediction
+Description: User attempts to predict another user's session. Preconditions: User is logged in. Steps:
+1. Attempt to predict another user's session. 2. Measure the response time and throughput. Expected Result: The application handles session prediction efficiently. Priority: High
+Test Type: Security
+
+**Test Case 217: Session Tampering**
+TC225: Security - Session Tampering
+Description: User attempts to tamper with another user's session. Preconditions: User is logged in. Steps:
+1. Attempt to tamper with another user's session. 2. Measure the response time and throughput. Expected Result: The application handles session tampering efficiently. Priority: High
+Test Type: Security
+
+**Test Case 218: Session Revocation**
+TC226: Security - Session Revocation
+Description: User attempts to revoke another user's session. Preconditions: User is logged in. Steps:
+1. Attempt to revoke another user's session. 2. Measure the response time and throughput. Expected Result: The application handles session revocation efficiently. Priority: High
+Test Type: Security
+
+**Test Case 219: Session Expiration with Revocation**
+TC225: Security - Session Expiration with Revocation
+Description: User's session expires and is revoked after a certain period of inactivity. Preconditions: User is logged in. Steps:
+1. Leave the application idle for a certain period. 2. Attempt to log in again. Expected Result: The application handles session expiration with revocation efficiently. Priority: High
+Test Type: Security
+
+**Test Case 220: Session Revocation with IP Blocking**
+TC226: Security - Session Revocation with IP Blocking
+Description: User attempts to revoke another user's session with IP blocking. Preconditions: User is logged in. Steps:
+1. Attempt to revoke another user's session with IP blocking. 2. Measure the response time and throughput. Expected Result: The application handles session revocation with IP blocking efficiently. Priority: High
+Test Type: Security
+
+**Test Case 221: Session Expiration with IP Blocking**
+TC225: Security - Session Expiration with IP Blocking
+Description: User's session expires and is blocked after a certain period of inactivity. Preconditions: User is logged in. Steps:
+1. Leave the application idle for a certain period. 2. Attempt to log in again. Expected Result: The application handles session expiration with IP blocking efficiently. Priority: High
+Test Type: Security
+
+**Test Case 222: Session Revocation with Session Fixation**
+TC226: Security - Session Revocation with Session Fixation
+Description: User attempts to revoke another user's session with session fixation. Preconditions: User is logged in. Steps:
+1. Attempt to revoke another user's session with session fixation. 2. Measure the response time and throughput. Expected Result: The application handles session revocation with session fixation efficiently. Priority: High
+Test Type: Security
+
+**Test Case 223: Session Expiration with Session Fixation**
+TC225: Security - Session Expiration with Session Fixation
+Description: User's session expires and is fixed after a certain period of inactivity. Preconditions: User is logged in. Steps:
+1. Leave the application idle for a certain period. 2. Attempt to log in again. Expected Result: The application handles session expiration with session fixation efficiently. Priority: High
+Test Type: Security
+
+**Test Case 224: Session Revocation with Session Prediction**
+TC226: Security - Session Revocation with Session Prediction
+Description: User attempts to revoke another user's session with session prediction. Preconditions: User is logged in. Steps:
+1. Attempt to revoke another user's session with session prediction. 2. Measure the response time and throughput. Expected Result: The application handles session revocation
+
+--- Batch 6: USABILITY AND ACCESSIBILITY TESTING (TC-251 to TC-300) ---
+Here are the 50 test cases for usability and accessibility testing, numbered from TC273 to TC272:
+
+**Test Case 251: Valid Login with Registered User (Different Browser)**
+TC273: Positive - Valid Login with Registered User (Different Browser)
+Description: User logs in with valid email and password using a different browser. Preconditions: User is registered with valid email and password. Steps:
+1. Open the application in a different browser. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Usability
+
+**Test Case 252: Invalid Email Format (Non-ASCII Characters)**
+TC272: Negative - Invalid Email Format (Non-ASCII Characters)
+Description: User logs in with invalid email format using non-ASCII characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with non-ASCII characters in the email field. 2. Enter valid password in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Usability
+
+**Test Case 253: Password Masking (Non-ASCII Characters)**
+TC273: Positive - Password Masking (Non-ASCII Characters)
+Description: Password is masked when entered using non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter password with non-ASCII characters in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Usability
+
+**Test Case 254: Login Button Disabled with Empty Fields (Different Browser)**
+TC272: Positive - Login Button Disabled with Empty Fields (Different Browser)
+Description: Login button is disabled when fields are empty using a different browser. Preconditions: User is registered. Steps:
+1. Open the application in a different browser. 2. Leave email and password fields empty. 3. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Usability
+
+**Test Case 255: Session Management (Different Device)**
+TC273: Security - Session Management (Different Device)
+Description: User's session is managed when logged in from a different device. Preconditions: User is logged in. Steps:
+1. Log in from a different device. 2. Check if the session is managed. Expected Result: Session is managed. Priority: High
+Test Type: Security
+
+**Test Case 256: Forgot Password (Different Browser)**
+TC272: Functional - Forgot Password (Different Browser)
+Description: User requests to reset password using a different browser. Preconditions: User is registered. Steps:
+1. Open the application in a different browser. 2. Click the forgot password link. 3. Enter valid email. Expected Result: Email is sent to the user's email. Priority: Medium
+Test Type: Functional
+
+**Test Case 257: Brute Force Attack (Different Browser)**
+TC273: Security - Brute Force Attack (Different Browser)
+Description: User attempts to login with multiple invalid attempts using a different browser. Preconditions: User is not registered. Steps:
+1. Open the application in a different browser. 2. Enter invalid email and password in the login form. 3. Click the login button multiple times. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 258: Login with Registered User (Different Language)**
+TC272: Positive - Login with Registered User (Different Language)
+Description: User logs in with valid email and password using a different language. Preconditions: User is registered with valid email and password. Steps:
+1. Change the language to a different one. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Usability
+
+**Test Case 259: Invalid Password Format (Non-ASCII Characters)**
+TC273: Negative - Invalid Password Format (Non-ASCII Characters)
+Description: User logs in with invalid password format using non-ASCII characters. Preconditions: User is not registered. Steps:
+1. Enter invalid password with non-ASCII characters in the password field. 2. Enter valid email in the email field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Usability
+
+**Test Case 260: Password Masking (Long Password)**
+TC272: Positive - Password Masking (Long Password)
+Description: Password is masked when entered using a long password. Preconditions: User is registered. Steps:
+1. Enter long password in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Usability
+
+**Test Case 261: Login Button Disabled with Empty Fields (Different Language)**
+TC273: Positive - Login Button Disabled with Empty Fields (Different Language)
+Description: Login button is disabled when fields are empty using a different language. Preconditions: User is registered. Steps:
+1. Change the language to a different one. 2. Leave email and password fields empty. 3. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Usability
+
+**Test Case 262: Session Management (Different Browser)**
+TC272: Security - Session Management (Different Browser)
+Description: User's session is managed when logged in from a different browser. Preconditions: User is logged in. Steps:
+1. Log in from a different browser. 2. Check if the session is managed. Expected Result: Session is managed. Priority: High
+Test Type: Security
+
+**Test Case 263: Forgot Password (Different Device)**
+TC273: Functional - Forgot Password (Different Device)
+Description: User requests to reset password using a different device. Preconditions: User is registered. Steps:
+1. Log in from a different device. 2. Click the forgot password link. 3. Enter valid email. Expected Result: Email is sent to the user's email. Priority: Medium
+Test Type: Functional
+
+**Test Case 264: Brute Force Attack (Different Device)**
+TC272: Security - Brute Force Attack (Different Device)
+Description: User attempts to login with multiple invalid attempts using a different device. Preconditions: User is not registered. Steps:
+1. Log in from a different device. 2. Enter invalid email and password in the login form. 3. Click the login button multiple times. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 265: Login with Registered User (Different Time Zone)**
+TC273: Positive - Login with Registered User (Different Time Zone)
+Description: User logs in with valid email and password using a different time zone. Preconditions: User is registered with valid email and password. Steps:
+1. Change the time zone to a different one. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: Medium
+Test Type: Usability
+
+**Test Case 266: Invalid Email Format (Special Characters)**
+TC272: Negative - Invalid Email Format (Special Characters)
+Description: User logs in with invalid email format using special characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with special characters in the email field. 2. Enter valid password in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Usability
+
+**Test Case 267: Password Masking (Short Password)**
+TC273: Positive - Password Masking (Short Password)
+Description: Password is masked when entered using a short password. Preconditions: User is registered. Steps:
+1. Enter short password in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Usability
+
+**Test Case 268: Login Button Disabled with Empty Fields (Different Time Zone)**
+TC272: Positive - Login Button Disabled with Empty Fields (Different Time Zone)
+Description: Login button is disabled when fields are empty using a different time zone. Preconditions: User is registered. Steps:
+1. Change the time zone to a different one. 2. Leave email and password fields empty. 3. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Usability
+
+**Test Case 269: Session Management (Different Time Zone)**
+TC273: Security - Session Management (Different Time Zone)
+Description: User's session is managed when logged in from a different time zone. Preconditions: User is logged in. Steps:
+1. Log in from a different time zone. 2. Check if the session is managed. Expected Result: Session is managed. Priority: High
+Test Type: Security
+
+**Test Case 270: Forgot Password (Different Language)**
+TC272: Functional - Forgot Password (Different Language)
+Description: User requests to reset password using a different language. Preconditions: User is registered. Steps:
+1. Change the language to a different one. 2. Click the forgot password link. 3. Enter valid email. Expected Result: Email is sent to the user's email. Priority: Medium
+Test Type: Functional
+
+**Test Case 271: Brute Force Attack (Different Language)**
+TC273: Security - Brute Force Attack (Different Language)
+Description: User attempts to login with multiple invalid attempts using a different language. Preconditions: User is not registered. Steps:
+1. Change the language to a different one. 2. Enter invalid email and password in the login form. 3. Click the login button
+
+--- Batch 7: API AND INTEGRATION TESTING (TC-301 to TC-350) ---
+Here are the 50 test cases for the given requirement:
+
+**Test Case 301: Valid Login with Registered User (Different Device)**
+TC301: Positive - Valid Login with Registered User (Different Device)
+Description: User logs in with valid email and password from a different device. Preconditions: User is registered with valid email and password. Steps:
+1. Log in from a different device using the same email and password. 2. Verify that the user is redirected to the dashboard. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Positive
+
+**Test Case 302: Invalid Email Format with Special Characters**
+TC302: Negative - Invalid Email Format with Special Characters
+Description: User logs in with invalid email format containing special characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with special characters in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 303: Empty Email Field with Leading and Trailing Spaces**
+TC303: Negative - Empty Email Field with Leading and Trailing Spaces
+Description: User logs in with empty email field containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Leave email field empty with leading and trailing spaces and enter valid password. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 304: Password Masking with Non-ASCII Characters**
+TC304: Positive - Password Masking with Non-ASCII Characters
+Description: Password is masked when entered with non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter password with non-ASCII characters in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Positive
+
+**Test Case 305: Brute Force Attack with Multiple Devices**
+TC305: Security - Brute Force Attack with Multiple Devices
+Description: User attempts to login with multiple invalid attempts from different devices. Preconditions: User is not registered. Steps:
+1. Enter invalid email and password in the login form from multiple devices. 2. Click the login button multiple times from each device. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 306: Forgot Password with Invalid Email**
+TC306: Functional - Forgot Password with Invalid Email
+Description: User requests to reset password with invalid email. Preconditions: User is registered. Steps:
+1. Click the forgot password link. 2. Enter invalid email. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Functional
+
+**Test Case 307: Session Timeout with Inactive Tab**
+TC307: Security - Session Timeout with Inactive Tab
+Description: User's session times out after inactivity in an inactive tab. Preconditions: User is logged in. Steps:
+1. Leave the application idle in an inactive tab for a long time. 2. Verify that the user is logged out. Expected Result: User is logged out. Priority: High
+Test Type: Security
+
+**Test Case 308: Valid Login with Registered User (Different Browser)**
+TC308: Positive - Valid Login with Registered User (Different Browser)
+Description: User logs in with valid email and password from a different browser. Preconditions: User is registered with valid email and password. Steps:
+1. Log in from a different browser using the same email and password. 2. Verify that the user is redirected to the dashboard. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Positive
+
+**Test Case 309: Invalid Password Format with Special Characters**
+TC309: Negative - Invalid Password Format with Special Characters
+Description: User logs in with invalid password format containing special characters. Preconditions: User is not registered. Steps:
+1. Enter invalid password with special characters in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 310: Empty Password Field with Multiple Spaces**
+TC310: Negative - Empty Password Field with Multiple Spaces
+Description: User logs in with empty password field containing multiple spaces. Preconditions: User is registered. Steps:
+1. Enter valid email and leave password field empty with multiple spaces. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 311: Password Masking with Null Characters**
+TC311: Positive - Password Masking with Null Characters
+Description: Password is masked when entered with null characters. Preconditions: User is registered. Steps:
+1. Enter password with null characters in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Positive
+
+**Test Case 312: Brute Force Attack with Different Devices and Browsers**
+TC312: Security - Brute Force Attack with Different Devices and Browsers
+Description: User attempts to login with multiple invalid attempts from different devices and browsers. Preconditions: User is not registered. Steps:
+1. Enter invalid email and password in the login form from different devices and browsers. 2. Click the login button multiple times from each device and browser. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 313: Forgot Password with Valid Email**
+TC313: Functional - Forgot Password with Valid Email
+Description: User requests to reset password with valid email. Preconditions: User is registered. Steps:
+1. Click the forgot password link. 2. Enter valid email. Expected Result: Email is sent to the user's email. Priority: Medium
+Test Type: Functional
+
+**Test Case 314: Session Timeout with Inactive Window**
+TC314: Security - Session Timeout with Inactive Window
+Description: User's session times out after inactivity in an inactive window. Preconditions: User is logged in. Steps:
+1. Leave the application idle in an inactive window for a long time. 2. Verify that the user is logged out. Expected Result: User is logged out. Priority: High
+Test Type: Security
+
+**Test Case 315: Valid Login with Registered User (Different Operating System)**
+TC315: Positive - Valid Login with Registered User (Different Operating System)
+Description: User logs in with valid email and password from a different operating system. Preconditions: User is registered with valid email and password. Steps:
+1. Log in from a different operating system using the same email and password. 2. Verify that the user is redirected to the dashboard. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Positive
+
+**Test Case 316: Invalid Email Format with Non-ASCII Characters**
+TC316: Negative - Invalid Email Format with Non-ASCII Characters
+Description: User logs in with invalid email format containing non-ASCII characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with non-ASCII characters in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 317: Empty Email Field with Cyrillic Characters**
+TC317: Negative - Empty Email Field with Cyrillic Characters
+Description: User logs in with empty email field containing Cyrillic characters. Preconditions: User is registered. Steps:
+1. Leave email field empty with Cyrillic characters and enter valid password. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 318: Password Masking with Greek Characters**
+TC318: Positive - Password Masking with Greek Characters
+Description: Password is masked when entered with Greek characters. Preconditions: User is registered. Steps:
+1. Enter password with Greek characters in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Positive
+
+**Test Case 319: Brute Force Attack with Different Devices and Operating Systems**
+TC319: Security - Brute Force Attack with Different Devices and Operating Systems
+Description: User attempts to login with multiple invalid attempts from different devices and operating systems. Preconditions: User is not registered. Steps:
+1. Enter invalid email and password in the login form from different devices and operating systems. 2. Click the login button multiple times from each device and operating system. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 320: Forgot Password with Invalid Email and Password**
+TC320: Functional - Forgot Password with Invalid Email and Password
+Description: User requests to reset password with invalid email and password. Preconditions: User is registered. Steps:
+1. Click the forgot password link. 2. Enter invalid email and password. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Functional
+
+**Test Case 321: Session Timeout with Inactive Tab and Window**
+TC321: Security - Session Timeout with Inactive Tab and Window
+Description: User's session times out after inactivity in an inactive tab and window. Preconditions: User is logged in. Steps:
+1. Leave the application idle in an inactive tab and window for a long time. 2. Verify that the user is logged out. Expected Result: User is logged out. Priority: High
+Test Type: Security
+
+**Test Case 322: Valid Login with Registered User (Different Browser and Operating System)**
+TC322: Positive - Valid Login with Registered User (Different Browser and Operating System)
+Description: User logs in with valid email and password from a different browser and operating system. Preconditions: User is registered with valid email and password. Steps:
+1. Log in from a different browser and operating system using the same email and password. 2. Verify that the user is redirected to
+
+--- Batch 8: DATA VALIDATION AND DATABASE TESTING (TC-351 to TC-400) ---
+Here are the 50 test cases for Batch 8:
+
+**Test Case 351: Valid Login with Registered User (Different Email and Password with Non-ASCII Characters)**
+TC351: Positive - Valid Login with Registered User (Different Email and Password with Non-ASCII Characters)
+Description: User logs in with valid email and password containing non-ASCII characters. Preconditions: User is registered with valid email and password containing non-ASCII characters. Steps:
+1. Enter valid email and password containing non-ASCII characters in the login form. 2. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Positive
+
+**Test Case 352: Invalid Email Format with Cyrillic Characters**
+TC352: Negative - Invalid Email Format with Cyrillic Characters
+Description: User logs in with invalid email format containing Cyrillic characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email format containing Cyrillic characters in the email field. 2. Enter valid password in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 353: Empty Email Field with Leading and Trailing Spaces**
+TC353: Negative - Empty Email Field with Leading and Trailing Spaces
+Description: User logs in with empty email field containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter empty email field with leading and trailing spaces. 2. Enter valid password in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 354: Login Button Disabled with Empty Fields and Special Characters**
+TC354: Positive - Login Button Disabled with Empty Fields and Special Characters
+Description: Login button is disabled when fields are empty and contain special characters. Preconditions: User is registered. Steps:
+1. Enter empty email field with special characters. 2. Enter empty password field with special characters. 3. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Positive
+
+**Test Case 355: Password Masking with Non-ASCII Characters**
+TC355: Positive - Password Masking with Non-ASCII Characters
+Description: Password is masked when entered with non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter password containing non-ASCII characters in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Positive
+
+**Test Case 356: Brute Force Attack with Multiple Invalid Attempts and Special Characters**
+TC356: Security - Brute Force Attack with Multiple Invalid Attempts and Special Characters
+Description: User attempts to login with multiple invalid attempts containing special characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email and password containing special characters in the login form. 2. Click the login button multiple times. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 357: Forgot Password with Invalid Email**
+TC357: Functional - Forgot Password with Invalid Email
+Description: User requests to reset password with invalid email. Preconditions: User is registered. Steps:
+1. Click the forgot password link. 2. Enter invalid email. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Functional
+
+**Test Case 358: Session Timeout with Inactivity and Non-ASCII Characters**
+TC358: Security - Session Timeout with Inactivity and Non-ASCII Characters
+Description: User's session times out after inactivity with non-ASCII characters. Preconditions: User is logged in. Steps:
+1. Leave the application idle for a long time with non-ASCII characters. 2. Expected Result: User is logged out. Priority: High
+Test Type: Security
+
+**Test Case 359: Valid Login with Registered User (Different Email and Password with Unicode Characters)**
+TC359: Positive - Valid Login with Registered User (Different Email and Password with Unicode Characters)
+Description: User logs in with valid email and password containing Unicode characters. Preconditions: User is registered with valid email and password containing Unicode characters. Steps:
+1. Enter valid email and password containing Unicode characters in the login form. 2. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Positive
+
+**Test Case 360: Invalid Password Format with Cyrillic Characters**
+TC360: Negative - Invalid Password Format with Cyrillic Characters
+Description: User logs in with invalid password format containing Cyrillic characters. Preconditions: User is registered. Steps:
+1. Enter valid email in the email field. 2. Enter invalid password format containing Cyrillic characters in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 361: Empty Password Field with Leading and Trailing Spaces**
+TC361: Negative - Empty Password Field with Leading and Trailing Spaces
+Description: User logs in with empty password field containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter valid email in the email field. 2. Enter empty password field with leading and trailing spaces. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 362: Login Button Disabled with Empty Fields and Non-ASCII Characters**
+TC362: Positive - Login Button Disabled with Empty Fields and Non-ASCII Characters
+Description: Login button is disabled when fields are empty and contain non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter empty email field with non-ASCII characters. 2. Enter empty password field with non-ASCII characters. 3. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Positive
+
+**Test Case 363: Password Masking with Cyrillic Characters**
+TC363: Positive - Password Masking with Cyrillic Characters
+Description: Password is masked when entered with Cyrillic characters. Preconditions: User is registered. Steps:
+1. Enter password containing Cyrillic characters in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Positive
+
+**Test Case 364: Brute Force Attack with Multiple Invalid Attempts and Non-ASCII Characters**
+TC364: Security - Brute Force Attack with Multiple Invalid Attempts and Non-ASCII Characters
+Description: User attempts to login with multiple invalid attempts containing non-ASCII characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email and password containing non-ASCII characters in the login form. 2. Click the login button multiple times. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 365: Forgot Password with Valid Email**
+TC365: Functional - Forgot Password with Valid Email
+Description: User requests to reset password with valid email. Preconditions: User is registered. Steps:
+1. Click the forgot password link. 2. Enter valid email. Expected Result: Email is sent to the user's email. Priority: Medium
+Test Type: Functional
+
+**Test Case 366: Session Timeout with Inactivity and Cyrillic Characters**
+TC366: Security - Session Timeout with Inactivity and Cyrillic Characters
+Description: User's session times out after inactivity with Cyrillic characters. Preconditions: User is logged in. Steps:
+1. Leave the application idle for a long time with Cyrillic characters. 2. Expected Result: User is logged out. Priority: High
+Test Type: Security
+
+**Test Case 367: Valid Login with Registered User (Different Email and Password with Greek Characters)**
+TC367: Positive - Valid Login with Registered User (Different Email and Password with Greek Characters)
+Description: User logs in with valid email and password containing Greek characters. Preconditions: User is registered with valid email and password containing Greek characters. Steps:
+1. Enter valid email and password containing Greek characters in the login form. 2. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Positive
+
+**Test Case 368: Invalid Email Format with Greek Characters**
+TC368: Negative - Invalid Email Format with Greek Characters
+Description: User logs in with invalid email format containing Greek characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email format containing Greek characters in the email field. 2. Enter valid password in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 369: Empty Email Field with Multiple Spaces**
+TC369: Negative - Empty Email Field with Multiple Spaces
+Description: User logs in with empty email field containing multiple spaces. Preconditions: User is registered. Steps:
+1. Enter empty email field with multiple spaces. 2. Enter valid password in the password field. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 370: Login Button Disabled with Empty Fields and Greek Characters**
+TC370: Positive - Login Button Disabled with Empty Fields and Greek Characters
+Description: Login button is disabled when fields are empty and contain Greek characters. Preconditions: User is registered. Steps:
+1. Enter empty email field with Greek characters. 2. Enter empty password field with Greek characters. 3. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Positive
+
+**Test Case 371: Password Masking with Greek Characters**
+TC371: Positive - Password Masking with Greek Characters
+Description: Password is masked when entered with Greek characters. Preconditions: User is registered. Steps:
+1. Enter password containing Greek characters in the
+
+--- Batch 9: ERROR HANDLING AND RECOVERY SCENARIOS (TC-401 to TC-450) ---
+Here are the 50 test cases for Batch 9, numbered from TC425 to TC424, focusing on error handling and recovery scenarios:
+
+**Test Case 401: Invalid Email Format with Special Characters**
+TC425: Negative - Invalid Email Format with Special Characters
+Description: User logs in with invalid email format containing special characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with special characters in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 402: Invalid Password Format with Special Characters**
+TC424: Negative - Invalid Password Format with Special Characters
+Description: User logs in with invalid password format containing special characters. Preconditions: User is registered. Steps:
+1. Enter valid email and invalid password with special characters. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 403: Empty Email Field with Leading and Trailing Spaces**
+TC425: Negative - Empty Email Field with Leading and Trailing Spaces
+Description: User logs in with empty email field containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter empty email with leading and trailing spaces in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 404: Empty Password Field with Leading and Trailing Spaces**
+TC424: Negative - Empty Password Field with Leading and Trailing Spaces
+Description: User logs in with empty password field containing leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter valid email and empty password with leading and trailing spaces. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 405: Login Button Disabled with Empty Fields and Leading and Trailing Spaces**
+TC425: Positive - Login Button Disabled with Empty Fields and Leading and Trailing Spaces
+Description: Login button is disabled when fields are empty and contain leading and trailing spaces. Preconditions: User is registered. Steps:
+1. Enter empty email and password with leading and trailing spaces in the login form. 2. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Positive
+
+**Test Case 406: Password Masking with Special Characters**
+TC424: Positive - Password Masking with Special Characters
+Description: Password is masked when entered with special characters. Preconditions: User is registered. Steps:
+1. Enter password with special characters in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Positive
+
+**Test Case 407: Brute Force Attack with Multiple Attempts**
+TC425: Security - Brute Force Attack with Multiple Attempts
+Description: User attempts to login with multiple invalid attempts. Preconditions: User is not registered. Steps:
+1. Enter invalid email and password in the login form. 2. Click the login button multiple times. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 408: Forgot Password with Invalid Email**
+TC424: Functional - Forgot Password with Invalid Email
+Description: User requests to reset password with invalid email. Preconditions: User is registered. Steps:
+1. Click the forgot password link. 2. Enter invalid email. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Functional
+
+**Test Case 409: Session Timeout with Inactivity**
+TC425: Security - Session Timeout with Inactivity
+Description: User's session times out after inactivity. Preconditions: User is logged in. Steps:
+1. Leave the application idle for a long time. 2. Attempt to login again. Expected Result: User is redirected to the login page. Priority: High
+Test Type: Security
+
+**Test Case 410: Invalid Email Format with Non-ASCII Characters**
+TC424: Negative - Invalid Email Format with Non-ASCII Characters
+Description: User logs in with invalid email format containing non-ASCII characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with non-ASCII characters in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 411: Invalid Password Format with Non-ASCII Characters**
+TC425: Negative - Invalid Password Format with Non-ASCII Characters
+Description: User logs in with invalid password format containing non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter valid email and invalid password with non-ASCII characters. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 412: Empty Email Field with Non-ASCII Characters**
+TC424: Negative - Empty Email Field with Non-ASCII Characters
+Description: User logs in with empty email field containing non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter empty email with non-ASCII characters in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 413: Empty Password Field with Non-ASCII Characters**
+TC425: Negative - Empty Password Field with Non-ASCII Characters
+Description: User logs in with empty password field containing non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter valid email and empty password with non-ASCII characters. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 414: Login Button Disabled with Empty Fields and Non-ASCII Characters**
+TC424: Positive - Login Button Disabled with Empty Fields and Non-ASCII Characters
+Description: Login button is disabled when fields are empty and contain non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter empty email and password with non-ASCII characters in the login form. 2. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Positive
+
+**Test Case 415: Password Masking with Non-ASCII Characters**
+TC425: Positive - Password Masking with Non-ASCII Characters
+Description: Password is masked when entered with non-ASCII characters. Preconditions: User is registered. Steps:
+1. Enter password with non-ASCII characters in the password field. 2. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Positive
+
+**Test Case 416: Brute Force Attack with Multiple Attempts and Non-ASCII Characters**
+TC424: Security - Brute Force Attack with Multiple Attempts and Non-ASCII Characters
+Description: User attempts to login with multiple invalid attempts containing non-ASCII characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email and password with non-ASCII characters in the login form. 2. Click the login button multiple times. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 417: Forgot Password with Non-ASCII Characters**
+TC425: Functional - Forgot Password with Non-ASCII Characters
+Description: User requests to reset password with non-ASCII characters. Preconditions: User is registered. Steps:
+1. Click the forgot password link. 2. Enter email with non-ASCII characters. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Functional
+
+**Test Case 418: Session Timeout with Inactivity and Non-ASCII Characters**
+TC424: Security - Session Timeout with Inactivity and Non-ASCII Characters
+Description: User's session times out after inactivity containing non-ASCII characters. Preconditions: User is logged in. Steps:
+1. Leave the application idle for a long time. 2. Attempt to login again. Expected Result: User is redirected to the login page. Priority: High
+Test Type: Security
+
+**Test Case 419: Invalid Email Format with Cyrillic Characters**
+TC425: Negative - Invalid Email Format with Cyrillic Characters
+Description: User logs in with invalid email format containing Cyrillic characters. Preconditions: User is not registered. Steps:
+1. Enter invalid email with Cyrillic characters in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Negative
+
+**Test Case 420: Invalid Password Format with Cyrillic Characters**
+TC424: Negative - Invalid Password Format with Cyrillic Characters
+Description: User logs in with invalid password format containing Cyrillic characters. Preconditions: User is registered. Steps:
+1. Enter valid email and invalid password with Cyrillic characters. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 421: Empty Email Field with Cyrillic Characters**
+TC425: Negative - Empty Email Field with Cyrillic Characters
+Description: User logs in with empty email field containing Cyrillic characters. Preconditions: User is registered. Steps:
+1. Enter empty email with Cyrillic characters in the login form. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 422: Empty Password Field with Cyrillic Characters**
+TC424: Negative - Empty Password Field with Cyrillic Characters
+Description: User logs in with empty password field containing Cyrillic characters. Preconditions: User is registered. Steps:
+1. Enter valid email and empty password with Cyrillic characters. 2. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Negative
+
+**Test Case 423: Login Button Disabled with Empty Fields and Cyrillic Characters**
+TC425: Positive - Login Button Disabled with Empty Fields
+
+--- Batch 10: CROSS-BROWSER AND CROSS-PLATFORM COMPATIBILITY (TC-451 to TC-500) ---
+Here are the 50 test cases for the given requirement:
+
+**Test Case 451: Valid Login with Registered User (Different Browser)**
+TC451: Positive - Valid Login with Registered User (Different Browser)
+Description: User logs in with valid email and password using a different browser. Preconditions: User is registered with valid email and password. Steps:
+1. Open the application in a different browser. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Cross-Browser
+
+**Test Case 452: Invalid Email and Password (Different Platform)**
+TC452: Negative - Invalid Email and Password (Different Platform)
+Description: User logs in with invalid email and password on a different platform. Preconditions: User is not registered. Steps:
+1. Open the application on a different platform (e.g., mobile). 2. Enter invalid email and password in the login form. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Cross-Platform
+
+**Test Case 453: Empty Email Field (Different Device)**
+TC453: Negative - Empty Email Field (Different Device)
+Description: User logs in with empty email field on a different device. Preconditions: User is registered. Steps:
+1. Open the application on a different device (e.g., tablet). 2. Leave email field empty and enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Cross-Device
+
+**Test Case 454: Password Masking (Different Browser)**
+TC454: Positive - Password Masking (Different Browser)
+Description: Password is masked when entered on a different browser. Preconditions: User is registered. Steps:
+1. Open the application in a different browser. 2. Enter password in the password field. 3. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Cross-Browser
+
+**Test Case 455: Brute Force Attack (Different Platform)**
+TC455: Security - Brute Force Attack (Different Platform)
+Description: User attempts to login with multiple invalid attempts on a different platform. Preconditions: User is not registered. Steps:
+1. Open the application on a different platform (e.g., mobile). 2. Enter invalid email and password in the login form. 3. Click the login button multiple times. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 456: Forgot Password (Different Device)**
+TC456: Functional - Forgot Password (Different Device)
+Description: User requests to reset password on a different device. Preconditions: User is registered. Steps:
+1. Open the application on a different device (e.g., tablet). 2. Click the forgot password link. 3. Enter valid email. Expected Result: Email is sent to the user's email. Priority: Medium
+Test Type: Functional
+
+**Test Case 457: Session Timeout (Different Browser)**
+TC457: Security - Session Timeout (Different Browser)
+Description: User's session times out after inactivity on a different browser. Preconditions: User is logged in. Steps:
+1. Open the application in a different browser. 2. Leave the application idle for a long time. Expected Result: User is logged out. Priority: High
+Test Type: Security
+
+**Test Case 458: Login Button Disabled with Empty Fields (Different Platform)**
+TC458: Positive - Login Button Disabled with Empty Fields (Different Platform)
+Description: Login button is disabled when fields are empty on a different platform. Preconditions: User is registered. Steps:
+1. Open the application on a different platform (e.g., mobile). 2. Leave email and password fields empty. 3. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Cross-Platform
+
+**Test Case 459: Valid Login with Registered User (Different Language)**
+TC459: Positive - Valid Login with Registered User (Different Language)
+Description: User logs in with valid email and password using a different language. Preconditions: User is registered with valid email and password. Steps:
+1. Open the application in a different language. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Cross-Language
+
+**Test Case 460: Invalid Email and Password (Different Font Size)**
+TC460: Negative - Invalid Email and Password (Different Font Size)
+Description: User logs in with invalid email and password with a different font size. Preconditions: User is not registered. Steps:
+1. Open the application with a different font size. 2. Enter invalid email and password in the login form. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Cross-Font
+
+**Test Case 461: Empty Email Field (Different Screen Resolution)**
+TC461: Negative - Empty Email Field (Different Screen Resolution)
+Description: User logs in with empty email field with a different screen resolution. Preconditions: User is registered. Steps:
+1. Open the application with a different screen resolution. 2. Leave email field empty and enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Cross-Resolution
+
+**Test Case 462: Password Masking (Different Color Scheme)**
+TC462: Positive - Password Masking (Different Color Scheme)
+Description: Password is masked when entered with a different color scheme. Preconditions: User is registered. Steps:
+1. Open the application with a different color scheme. 2. Enter password in the password field. 3. Check if the password is masked. Expected Result: Password is masked. Priority: Medium
+Test Type: Cross-Color
+
+**Test Case 463: Brute Force Attack (Different Browser Type)**
+TC463: Security - Brute Force Attack (Different Browser Type)
+Description: User attempts to login with multiple invalid attempts with a different browser type. Preconditions: User is not registered. Steps:
+1. Open the application with a different browser type (e.g., Chrome). 2. Enter invalid email and password in the login form. 3. Click the login button multiple times. Expected Result: Account is locked after multiple attempts. Priority: High
+Test Type: Security
+
+**Test Case 464: Forgot Password (Different Operating System)**
+TC464: Functional - Forgot Password (Different Operating System)
+Description: User requests to reset password with a different operating system. Preconditions: User is registered. Steps:
+1. Open the application with a different operating system (e.g., Linux). 2. Click the forgot password link. 3. Enter valid email. Expected Result: Email is sent to the user's email. Priority: Medium
+Test Type: Functional
+
+**Test Case 465: Session Timeout (Different Time Zone)**
+TC465: Security - Session Timeout (Different Time Zone)
+Description: User's session times out after inactivity with a different time zone. Preconditions: User is logged in. Steps:
+1. Open the application with a different time zone. 2. Leave the application idle for a long time. Expected Result: User is logged out. Priority: High
+Test Type: Security
+
+**Test Case 466: Login Button Disabled with Empty Fields (Different Keyboard Layout)**
+TC466: Positive - Login Button Disabled with Empty Fields (Different Keyboard Layout)
+Description: Login button is disabled when fields are empty with a different keyboard layout. Preconditions: User is registered. Steps:
+1. Open the application with a different keyboard layout. 2. Leave email and password fields empty. 3. Check if the login button is disabled. Expected Result: Login button is disabled. Priority: Medium
+Test Type: Cross-Keyboard
+
+**Test Case 467: Valid Login with Registered User (Different Browser Extension)**
+TC467: Positive - Valid Login with Registered User (Different Browser Extension)
+Description: User logs in with valid email and password with a different browser extension. Preconditions: User is registered with valid email and password. Steps:
+1. Open the application with a different browser extension. 2. Enter valid email and password in the login form. 3. Click the login button. Expected Result: User is redirected to the dashboard. Priority: High
+Test Type: Cross-Extension
+
+**Test Case 468: Invalid Email and Password (Different Browser Mode)**
+TC468: Negative - Invalid Email and Password (Different Browser Mode)
+Description: User logs in with invalid email and password with a different browser mode. Preconditions: User is not registered. Steps:
+1. Open the application with a different browser mode (e.g., incognito). 2. Enter invalid email and password in the login form. 3. Click the login button. Expected Result: Error message is displayed. Priority: High
+Test Type: Cross-Mode
+
+**Test Case 469: Empty Email Field (Different Browser Profile)**
+TC469: Negative - Empty Email Field (Different Browser Profile)
+Description: User logs in with empty email field with a different browser profile. Preconditions: User is registered. Steps:
+1. Open the application with a different browser profile. 2. Leave email field empty and enter valid password. 3. Click the login button. Expected Result: Error message is displayed. Priority: Medium
+Test Type: Cross-Profile
+
+**Test Case 470: Password Masking (Different Browser Theme)**
+TC470: Positive - Password Masking (Different Browser Theme)
+Description: Password is masked when entered with a different browser theme. Preconditions: User is registered. Steps:
+1. Open the application with a different browser theme. 2. Enter password in the

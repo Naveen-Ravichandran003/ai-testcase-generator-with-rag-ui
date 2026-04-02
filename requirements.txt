@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+requests
+python-dotenv
+streamlit
+pandas
+fpdf2
+tabulate

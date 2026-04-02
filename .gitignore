@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.env
+
+# MacOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Ignore large generated outputs to prevent bloating the repo, except maybe a sample if wanted
+# saved_test_cases/
