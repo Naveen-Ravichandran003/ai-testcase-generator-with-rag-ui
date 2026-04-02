@@ -5,7 +5,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
 ![Langflow](https://img.shields.io/badge/Langflow-RAG-purple)
 
-An enterprise-grade AI Test Case Generator that leverages RAG (Retrieval-Augmented Generation), Langflow pipelines, and LLMs (Groq / Llama3 / Gemini) to generate scalable, high-quality test cases from JIRA or feature inputs.
+An enterprise-grade AI Test Case Generator that leverages RAG (Retrieval-Augmented Generation), Langflow pipelines, and LLMs (Groq / Llama3) to generate scalable, high-quality test cases from JIRA or feature inputs.
 
 The system uses batch processing to overcome LLM token limits and integrates a Streamlit UI with a FastAPI backend for seamless user interaction.
 
