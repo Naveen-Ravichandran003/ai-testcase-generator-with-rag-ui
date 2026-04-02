@@ -15,3 +15,5 @@ venv/
 
 # Ignore large generated outputs to prevent bloating the repo, except maybe a sample if wanted
 # saved_test_cases/
+
+Screenshot/
