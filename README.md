@@ -1,16 +1,17 @@
-# AI Test Case Generator using RAG, Langflow & Batch Processing with UI
+# Test Case Generator using RAG, Langflow & Batch Processing with UI
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
 ![Langflow](https://img.shields.io/badge/Langflow-RAG-purple)
+![Test Cases](https://img.shields.io/badge/Generated-500%2B%20Test%20Cases-brightgreen)
 
-An enterprise-grade AI Test Case Generator that leverages RAG (Retrieval-Augmented Generation), Langflow pipelines, and LLMs (Groq / Llama3 / Gemini) to generate scalable, high-quality test cases from JIRA or feature inputs.
+An enterprise-grade AI Test Case Generator that leverages RAG (Retrieval-Augmented Generation), Langflow pipelines, and LLMs (Groq / Llama3) to generate **500+ scalable, high-quality test cases** from JIRA or feature inputs.
 
 The system uses batch processing to overcome LLM token limits and integrates a Streamlit UI with a FastAPI backend for seamless user interaction.
 
 ## 💡 Why This Project?
-LLMs cannot generate large volumes of structured output (e.g., 500 test cases) in a single request due to token limitations.
+LLMs cannot generate large volumes of structured output (e.g., 500+ test cases) in a single request due to token limitations.
 
 This project solves that problem using:
 - Batch processing
@@ -21,13 +22,32 @@ This project solves that problem using:
 This ensures scalability, accuracy, and high-quality output.
 
 ## 🚀 Features
-- **✅ Batch-based Generation:** Generates large volumes (500+) using controlled batching (20 per batch)
-- **✅ Perfect Sequential Numbering:** Ensures TC001 → TC500 without gaps
+- **✅ 500+ Test Case Generation:** Successfully generates 500+ unique, structured test cases in a single run
+- **✅ Batch-based Generation:** Generates large volumes using controlled batching (20 per batch)
+- **✅ Perfect Sequential Numbering:** Ensures TC-001 → TC-500+ without gaps
 - **✅ Dynamic Makeup Engine:** Automatically fills missing test cases if a batch under-produces
-- **✅ Rate Limit Handling:** Detects API limits (429) and retries intelligently
-- **✅ Auto-Save System:** Saves outputs in Markdown and JSON formats
+- **✅ Rate Limit Handling:** Detects API limits (429) and retries intelligently with exponential backoff
+- **✅ Auto-Save System:** Saves outputs in Markdown and JSON formats with metadata
 - **✅ Multi-layer Deduplication:** Prevents duplicate scenarios using contextual memory
 - **✅ Circuit Breakers:** Stops execution safely during repeated failures
+- **✅ Role-Based Test Coverage:** Generates tests across positive, negative, boundary, security, performance, and more
+
+## 📸 Screenshots
+
+### UI - Test Case Generation Screen
+![Generate Screen](Screenshot/Screenshot%202026-04-02%20105305.png)
+
+### UI - Generation In Progress
+![In Progress](Screenshot/Screenshot%202026-04-02%20105414.png)
+
+### UI - 500+ Test Cases Successfully Generated
+![500+ Generated](Screenshot/Screenshot%202026-04-02%20195050.png)
+
+### UI - Download & Export Options
+![Download Options](Screenshot/Screenshot%202026-04-02%20195114.png)
+
+### Langflow RAG Pipeline
+![Langflow Pipeline](Screenshot/Screenshot%202026-04-02%20101909.png)
 
 ## 🏗️ Architecture Diagram
 
@@ -48,7 +68,7 @@ graph TD
     end
     
     K --> L[API Integration Response]
-    L --> M[Export Formats CSV/Text/Excel]
+    L --> M[Export Formats Markdown/JSON]
 ```
 
 ## 🧩 Workflow
@@ -72,12 +92,13 @@ graph TD
    → LLM generates context-aware output  
 
 7. Export  
-   → Outputs saved as CSV / Markdown / JSON  
+   → Outputs saved as Markdown / JSON with full metadata  
 
 ## 🛠️ Tech Stack
 - **Frontend:** Streamlit 
 - **Backend:** FastAPI, Uvicorn, Python `requests`
-- **AI Processing:** Langflow 
+- **AI Processing:** Langflow, Groq API (Llama3)
+- **Storage:** ChromaDB (vector), local file system (Markdown/JSON)
 
 ## 📦 Installation & Usage
 
@@ -104,12 +125,12 @@ graph TD
 
 5. **Start Generating**
    - Access the UI at `http://localhost:8501`.
-   - Enter your Jira User Story and your Langflow ID.
-   - Adjust your target count (up to 1,000 cases).
-   - Let the dynamic pipeline do the heavy lifting!
+   - Enter your Jira User Story and your Langflow Flow ID.
+   - Set your target count (tested and verified up to **525+ test cases** in a single run).
+   - Let the dynamic self-healing pipeline do the heavy lifting!
 
 ## 💾 Saved Exports
-All runs are securely cached in the `saved_test_cases/` directory and structurally exported with metadata tracking. You can access these structured `.md` files at any point for Jira imports or local review.
+All runs are securely cached in the `saved_test_cases/` directory and exported in both `.md` (Markdown) and `.json` formats with full metadata tracking (timestamps, batch counts, total generated). Files can be used for Jira imports, review, or further analysis.
 
 ---
 **Developed by Naveen Ravichandran**

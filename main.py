@@ -348,14 +348,15 @@ def generate(data: GenerateRequest):
     all_test_cases = []
     all_titles = []
     category_titles = collections.defaultdict(list)
+    seen_titles_global = set()
     batch_details = []
     batch_errors = []
 
     total_batches_est = (total_requested + batch_size - 1) // batch_size
     total_generated_so_far = 0
     total_batches_est = (total_requested + batch_size - 1) // batch_size
-    # Safeguard against infinite loops: allow 50% extra batches for makeup
-    max_allowed_batches = min(100, int(total_batches_est * 1.5) + 5)
+    # Safeguard against infinite loops: allow more batches for makeup due to strict filtering
+    max_allowed_batches = min(200, int(total_batches_est * 2.5) + 15)
     consecutive_failures = 0  # Circuit breaker counter
 
     batch_num = 1
@@ -604,31 +605,73 @@ def generate(data: GenerateRequest):
             batch_num += 1
             continue  # Next batch — start_num stays the same
 
-        # Fix numbering only for successful output
-        output_text = fix_numbering(output_text, start_num)
+        # ── Strict Validation, Deduplication, and Reconstruction ──
+        parsed_batch = parse_test_cases(output_text)
+        
+        reconstructed_blocks = []
+        actual_count = 0
 
-        # Extract titles for dedup
-        batch_titles = extract_titles(output_text)
-        all_titles.extend(batch_titles)
-        category_titles[category].extend(batch_titles)
+        for tc in parsed_batch:
+            if actual_count >= current_batch:
+                 break # Don't exceed requested batch size
 
-        # Count actual test cases — only for successful batches
-        actual_count = count_test_cases_in_output(output_text)
-        actual_count = min(actual_count, current_batch)  # Don't over-count
+            # 1. Structural Validation: Must have Title, Description, Expected Result
+            title = tc.get('Title', '').strip()
+            desc = tc.get('Description', '').strip()
+            steps = tc.get('Steps', '').strip()
+            
+            if not title or not desc or not steps:
+                continue
+            if len(title) < 5 or len(desc) < 10:
+                continue
+                
+            # 2. Uniqueness Validation
+            title_norm = title.lower()
+            if title_norm in seen_titles_global:
+                continue
+                
+            # Mark as seen
+            seen_titles_global.add(title_norm)
+            all_titles.append(title)
+            category_titles[category].append(title)
+            
+            # 3. Secure Formatting and Sequential ID enforcement
+            actual_count += 1
+            new_id_num = start_num + actual_count - 1
+            new_id = f"TC-{new_id_num:03d}"
+            new_header = f"Test Case {new_id_num:03d}"
+            
+            block_str = (
+                f"**{new_header}**\n"
+                f"ID: {new_id}\n"
+                f"Title: {title}\n"
+                f"Description: {desc}\n"
+                f"Preconditions: {tc.get('Preconditions', '')}\n"
+                f"Steps:\n{steps}\n"
+                f"Expected Result: {tc.get('Expected Result', '')}\n"
+                f"Priority: {tc.get('Priority', 'Medium')}\n"
+                f"Test Type: {tc.get('Test Type', category)}"
+            )
+            reconstructed_blocks.append(block_str)
+
         total_generated_so_far += actual_count
-
+        
         batch_header = (
             f"--- Batch {batch_num}: {category.upper()} "
-            f"(Targeting TC-{start_num:03d} to TC-{end_num:03d}) ---"
+            f"(Targeting TC-{start_num:03d} to TC-{(start_num + actual_count - 1) if actual_count > 0 else start_num:03d}) ---"
         )
-        all_test_cases.append(f"{batch_header}\n{output_text}")
+        if reconstructed_blocks:
+            reconstructed_batch_text = "\n\n".join(reconstructed_blocks)
+            all_test_cases.append(f"{batch_header}\n\n{reconstructed_batch_text}\n")
+        else:
+            all_test_cases.append(f"{batch_header}\n\n(No valid unique test cases extracted from this batch)\n")
 
         batch_details.append({
             "batch": batch_num,
             "category": category,
             "requested": current_batch,
             "generated": actual_count,
-            "range": f"TC-{start_num:03d} to TC-{(start_num + actual_count - 1):03d}",
+            "range": f"TC-{start_num:03d} to TC-{(start_num + actual_count - 1):03d}" if actual_count > 0 else "NONE",
             "status": "warning" if actual_count < current_batch else "success",
         })
         batch_num += 1
