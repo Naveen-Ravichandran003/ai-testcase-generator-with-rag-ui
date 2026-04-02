@@ -1,7 +1,5 @@
 # AI Test Case Generator using RAG, Langflow & Batch Processing with UI
 
-**Developed by Naveen Ravichandran**
-
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
@@ -112,3 +110,6 @@ graph TD
 
 ## 💾 Saved Exports
 All runs are securely cached in the `saved_test_cases/` directory and structurally exported with metadata tracking. You can access these structured `.md` files at any point for Jira imports or local review.
+
+---
+**Developed by Naveen Ravichandran**
