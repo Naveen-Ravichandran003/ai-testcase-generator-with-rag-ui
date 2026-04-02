@@ -1,14 +1,78 @@
-# AI Test Case Generator with RAG UI
+# AI Test Case Generator using RAG, Langflow & Batch Processing
 
-An enterprise-grade, highly resilient AI Test Case Generator. This application seamlessly integrates a beautiful Streamlit frontend with a robust FastAPI backend, orchestrating generation tasks through Langflow RAG pipelines and LLMs (Groq / Llama3 / Gemini). 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
+![Langflow](https://img.shields.io/badge/Langflow-RAG-purple)
+
+An enterprise-grade AI Test Case Generator that leverages RAG (Retrieval-Augmented Generation), Langflow pipelines, and LLMs (Groq / Llama3 / Gemini) to generate scalable, high-quality test cases from JIRA or feature inputs.
+
+The system uses batch processing to overcome LLM token limits and integrates a Streamlit UI with a FastAPI backend for seamless user interaction.
+
+## 💡 Why This Project?
+LLMs cannot generate large volumes of structured output (e.g., 500 test cases) in a single request due to token limitations.
+
+This project solves that problem using:
+- Batch processing
+- RAG architecture
+- Prompt engineering
+- Deduplication strategies
+
+This ensures scalability, accuracy, and high-quality output.
 
 ## 🚀 Features
-- **Perfect Sequential Numbering & Ghost-Count Fixes:** Ensures gapless sequential numbering (e.g. TC-001, TC-002...) regardless of AI variation or intermittent batch failures.
-- **Smart Quota & Rate Limit Guardian:** Dynamically intercepts `HTTP 429` Rate Limits from Groq/LLMs. Deciphers exact "Retry After" backoffs and automatically pauses, or cleanly aborts with a user-friendly UI timer.
-- **Dynamic Makeup Engine:** If the LLM produces fewer test cases than requested per batch (e.g., 17 instead of 20), the engine dynamically spins up calculated "makeup batches" at the tail end to hit your exact target (e.g., exactly 500 scenarios).
-- **Auto-Save & Structured Markdown:** Every generation is safely auto-saved locally into `saved_test_cases/` as cleanly formatted `.md` documents and raw `.json` metadata. No work is lost even if the connection drops.
-- **Multi-Layer Category Deduplication:** Uses an advanced rotating cache to inject previously generated module contexts directly into the AI prompt to enforce 100% unique edge-cases.
-- **Circuit Breakers:** Aborts cleanly if upstream AI models experience extended outages (3 consecutive failures).
+- **✅ Batch-based Generation:** Generates large volumes (500+) using controlled batching (20 per batch)
+- **✅ Perfect Sequential Numbering:** Ensures TC001 → TC500 without gaps
+- **✅ Dynamic Makeup Engine:** Automatically fills missing test cases if a batch under-produces
+- **✅ Rate Limit Handling:** Detects API limits (429) and retries intelligently
+- **✅ Auto-Save System:** Saves outputs in Markdown and JSON formats
+- **✅ Multi-layer Deduplication:** Prevents duplicate scenarios using contextual memory
+- **✅ Circuit Breakers:** Stops execution safely during repeated failures
+
+## 🏗️ Architecture Diagram
+
+```mermaid
+graph TD
+    A[User Input Jira/Feature] --> B[Streamlit UI]
+    B --> C[FastAPI Backend Batch Processing]
+    C -->|20 cases/batch| D[Langflow RAG Pipeline]
+    
+    subgraph Langflow Core
+        D -->|Generate Test Cases| E[LLM llama/Groq/Gemini]
+        E --> F[Test Cases]
+        F --> G[Embeddings + Chunking]
+        G --> H[(Chroma DB Vector Storage)]
+        I[User Query] --> J[RAG Retrieval Semantic Search]
+        H -.-> J
+        J --> K[Context-Aware LLM Response]
+    end
+    
+    K --> L[API Integration Response]
+    L --> M[Export Formats CSV/Text/Excel]
+```
+
+## 🧩 Workflow
+
+1. User Input  
+   → JIRA ticket or feature description via UI  
+
+2. Batch Processing  
+   → Splits generation into batches (20 test cases each)  
+
+3. LLM Generation  
+   → Langflow orchestrates prompt-based test case creation  
+
+4. RAG Storage  
+   → Test cases converted to embeddings and stored in Chroma DB  
+
+5. Retrieval  
+   → Relevant test cases fetched using semantic search  
+
+6. Response Generation  
+   → LLM generates context-aware output  
+
+7. Export  
+   → Outputs saved as CSV / Markdown / JSON  
 
 ## 🛠️ Tech Stack
 - **Frontend:** Streamlit 
