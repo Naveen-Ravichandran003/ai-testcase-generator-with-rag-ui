@@ -32,23 +32,6 @@ This ensures scalability, accuracy, and high-quality output.
 - **✅ Circuit Breakers:** Stops execution safely during repeated failures
 - **✅ Role-Based Test Coverage:** Generates tests across positive, negative, boundary, security, performance, and more
 
-## 📸 Screenshots
-
-### UI - Test Case Generation Screen
-![Generate Screen](Screenshot/Screenshot%202026-04-02%20105305.png)
-
-### UI - Generation In Progress
-![In Progress](Screenshot/Screenshot%202026-04-02%20105414.png)
-
-### UI - 500+ Test Cases Successfully Generated
-![500+ Generated](Screenshot/Screenshot%202026-04-02%20195050.png)
-
-### UI - Download & Export Options
-![Download Options](Screenshot/Screenshot%202026-04-02%20195114.png)
-
-### Langflow RAG Pipeline
-![Langflow Pipeline](Screenshot/Screenshot%202026-04-02%20101909.png)
-
 ## 🏗️ Architecture Diagram
 
 ```mermaid
